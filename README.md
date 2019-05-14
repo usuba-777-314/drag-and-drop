@@ -1,8 +1,5 @@
 # drag-and-drop
 
-## Demo
-https://github.com/usuba-777-314/drag-and-drop
-
 ## Project setup
 ```
 npm install

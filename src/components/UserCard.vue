@@ -92,7 +92,6 @@ export default {
 
     .tag {
       display: block;
-      height: 16px;
 
       margin: 0 0 40px 6px;
       text-decoration: underline;

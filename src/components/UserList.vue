@@ -34,24 +34,13 @@ export default {
     UserCard
   },
 
-  data() {
-    return {
-      moveDestination: null
-    };
-  },
-
   computed: {
-    ...mapState(["movingUser", "movingDestination"]),
+    ...mapState(["movingUser"]),
     ...mapGetters(["users"])
   },
 
   methods: {
-    ...mapActions({
-      startMoving: "startMoving",
-      endMoving: "endMoving",
-      setMovingIndex: "setMovingIndex",
-      moveUser: "moveUser"
-    })
+    ...mapActions(["startMoving", "endMoving", "setMovingIndex", "moveUser"])
   }
 };
 </script>
@@ -78,8 +67,7 @@ export default {
       padding-bottom: 0;
     }
 
-    &.dragging,
-    &.ghost {
+    &.dragging {
       opacity: 0.2;
     }
   }

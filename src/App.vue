@@ -5,6 +5,10 @@
     </header>
 
     <UserList />
+
+    <footer>
+      <a href="https://github.com/usuba-777-314/drag-and-drop">GitHub</a>
+    </footer>
   </div>
 </template>
 
@@ -57,6 +61,23 @@ header {
     max-width: 1176px;
 
     margin: 0 auto;
+  }
+}
+
+footer {
+  height: 32px;
+  box-sizing: border-box;
+
+  background-color: white;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+  padding: 0 8px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  a {
+    display: block;
   }
 }
 </style>
